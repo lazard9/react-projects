@@ -1,0 +1,38 @@
+[
+    {
+        "id": "1",
+        "imgUrl": "./assets/product-1.png",
+        "imgAlt": "some text",
+        "title": "Card Title I",
+        "description": "Supportive text and the essential context goes here.",
+        "ctaLink": "#",
+        "ctaText": "Action I"
+    },
+    {
+        "id": "2",
+        "imgUrl": "./assets/product-2.png",
+        "imgAlt": "some text",
+        "title": "Card Title II",
+        "description": "Supportive text and the essential context goes here.",
+        "ctaLink": "#",
+        "ctaText": "Action II"
+    },
+    {
+        "id": "3",
+        "imgUrl": "./assets/product-3.png",
+        "imgAlt": "some text",
+        "title": "Card Title III",
+        "description": "Supportive text and the essential context goes here.",
+        "ctaLink": "#",
+        "ctaText": "Action III"
+    },
+    {
+        "id": "4",
+        "imgUrl": "./assets/product-4.jpg",
+        "imgAlt": "some text",
+        "title": "Card Title IV",
+        "description": "Supportive text and the essential context goes here.",
+        "ctaLink": "#",
+        "ctaText": "Action IV"
+    }
+]

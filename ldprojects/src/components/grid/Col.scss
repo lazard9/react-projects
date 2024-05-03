@@ -1,0 +1,28 @@
+.col {
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@mixin generateColClasses() {
+    $breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 1024px,
+        xl: 1200px,
+    );
+
+    @each $breakpoint, $size in $breakpoints {
+        @for $i from 1 through 12 {
+            .col-#{$breakpoint}-#{$i} {
+                @media (min-width: $size) {
+                    flex: 0 0 calc((#{$i} / 12) * 100%);
+                }
+            }
+        }
+    }
+}
+
+@include generateColClasses();

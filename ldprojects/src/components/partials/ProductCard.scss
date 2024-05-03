@@ -1,0 +1,82 @@
+.product-card {
+    position: relative;
+    padding: 18px 19px 74px 18px;
+    color: hsl(258, 18%, 19%);
+    background-color: #fff;
+    border-radius: 24px;
+    height: 505px;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 360px;
+
+    // @media screen and (min-width: 576px) {
+    //     width: 47%;
+    //     max-width: 100%;
+    //     margin-left: 1.5%;
+    //     margin-right: 1.5%;
+    // }
+
+    // @media screen and (min-width: 1024px) {
+    //     width: 22.75%;
+    //     margin-bottom: 0;
+
+    //     &:first-of-type {
+    //         margin-left: 0;
+    //     }
+        
+    //     &:last-of-type {
+    //         margin-right: 0;
+    //     }
+    // }
+
+    &__image-holder {
+        margin-bottom: 28px;
+    } 
+
+    &__dots {
+        position: absolute;
+        top: 18px;
+        right: 9px;
+        z-index: 2;
+    }
+
+    &__description {
+        margin: 19px 0 0;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.38;
+        letter-spacing: normal;
+        text-align: left;
+        color: hsl(258, 18%, 19%);
+        position: relative;
+        z-index: 2;
+    }
+
+    &__cta {
+        font-size: 18px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: hsl(199, 89%, 63%);
+        text-decoration: none;
+        position: absolute;
+        left: 18px;
+        bottom: 55px;
+        z-index: 2;
+        text-decoration: none;
+        transition: color 0.32s ease-in-out;
+
+        &:hover,
+        &:focus {
+            color: hsl(245, 100%, 75%);
+        }
+    }
+}

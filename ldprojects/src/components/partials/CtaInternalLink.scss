@@ -1,0 +1,25 @@
+.cta-internal-link {
+    width: 180px;
+    text-decoration: none;
+    padding: 15px;
+    background-color: transparent;
+    border-radius: 8px;
+    border: 2px solid hsl(200, 100%, 90%);
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: hsl(200, 100%, 90%);
+    cursor: pointer;
+    transition: all 0.32s ease-in-out;
+    display: block;
+    box-sizing: border-box;
+
+    &:hover {
+        color: hsl(258, 18%, 19%);
+        background-color: hsl(200, 100%, 90%);
+    }
+}
