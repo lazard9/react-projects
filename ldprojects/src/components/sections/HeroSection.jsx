@@ -1,6 +1,6 @@
 import Heading from "../partials/Heading.jsx";
-import reactLogo from "../../assets/react.svg";
-import viteLogo from "../../assets/vite.svg";
+import reactLogo from "../../assets/images/react.svg";
+import viteLogo from "../../assets/images/vite.svg";
 import "./HeroSection.scss";
 
 const HeroSection = ({ heroBackgroundImage, children }) => {

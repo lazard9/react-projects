@@ -11,8 +11,8 @@ import PortraitCard from "../components/partials/PortraitCard";
 import ProductCard from "../components/partials/ProductCard";
 import DestinationCard from "../components/partials/DestinationCard";
 
-import heroBackgroundImage from "../assets/bacground-01.jpg";
-import paralaxBackgroundImage from "../assets/aurora-background.png";
+import heroBackgroundImage from "../assets/images/bacground-01.jpg";
+import paralaxBackgroundImage from "../assets/images/aurora-background.png";
 
 import portraitCardsData from "../portrait-cards.json";
 import productCardsData from "../product-cards.json";

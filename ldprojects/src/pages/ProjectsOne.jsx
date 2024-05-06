@@ -1,14 +1,16 @@
-import { useEffect, useState } from "react";
-
 import Container from "../components/grid/Container";
+import Row from "../components/grid/Row";
+import Col from "../components/grid/Col";
 
 import HeroSection from "../components/sections/HeroSection";
 import Heading from "../components/partials/Heading";
 import Content from "../components/partials/Content";
 
 import TaskListHolder from "../components/projects-one/task-list/TaskListHolder";
+import FilterProductList from "../components/projects-one/filter-product-list/FilterProductList";
+import StateFromUrl from "../components/projects-one/state-from-url/StateFromUrl";
 
-import heroBackgroundImage from "../assets/bacground-05.jpg";
+import heroBackgroundImage from "../assets/images/bacground-05.jpg";
 
 const ProjectsOne = () => {
     return (
@@ -40,6 +42,30 @@ const ProjectsOne = () => {
                 </Content>
 
                 <TaskListHolder />
+            </Container>
+
+            <Container containerWidth="sm">
+                <Heading level={2}>URL search parameters</Heading>
+
+                <Content maxWidth="none">
+                    In this section we have a list of products that can be
+                    filtered. The first approach is classic and we use usestate.
+                    The second is without useState, but useSearchParams, which
+                    allows us to place the state in the URL. The benefits of
+                    this approach are manifold. Besides going back to the old
+                    days in web development, the URL can be copied and shared,
+                    and put in personal bookmarks etc.
+                </Content>
+
+                <Row>
+                    <Col xs={12} sm={6} md={6} lg={6} xl={6}>
+                        <FilterProductList />
+                    </Col>
+
+                    <Col xs={12} sm={6} md={6} lg={6} xl={6}>
+                        <StateFromUrl />
+                    </Col>
+                </Row>
             </Container>
         </>
     );
