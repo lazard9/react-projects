@@ -24,6 +24,10 @@
                 &:focus {
                     color: hsl(199, 89%, 63%);
                 }
+
+                svg {                    
+                    margin-right: 0.5rem;
+                }
             }
         }
     }
