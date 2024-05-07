@@ -14,9 +14,9 @@ import DestinationCard from "../components/partials/DestinationCard";
 import heroBackgroundImage from "../assets/images/bacground-01.jpg";
 import paralaxBackgroundImage from "../assets/images/aurora-background.png";
 
-import portraitCardsData from "../portrait-cards.json";
-import productCardsData from "../product-cards.json";
-import destinationCardsData from "../destination-cards.json";
+import portraitCardsData from "../assets/data/portrait-cards.json";
+import productCardsData from "../assets/data/product-cards.json";
+import destinationCardsData from "../assets/data/destination-cards.json";
 
 const Home = () => {
     return (
@@ -57,24 +57,30 @@ const Home = () => {
                 <Heading>Destination Cards</Heading>
 
                 <Row>
-                    {destinationCardsData.map((cardData) => (
-                        <Col
-                            xs={12}
-                            sm={6}
-                            md={6}
-                            lg={3}
-                            xl={3}
-                            key={cardData.id}
-                        >
-                            <DestinationCard
-                                cardBackgroundImage={cardData.imgUrl}
-                                title={cardData.title}
-                                description={cardData.description}
-                                ctaLink={cardData.ctaLink}
-                                ctaText={cardData.ctaText}
-                            />
+                    {destinationCardsData.length > 0 ? (
+                        destinationCardsData.map((cardData) => (
+                            <Col
+                                xs={12}
+                                sm={6}
+                                md={6}
+                                lg={3}
+                                xl={3}
+                                key={cardData.id}
+                            >
+                                <DestinationCard
+                                    cardBackgroundImage={cardData.imgUrl}
+                                    title={cardData.title}
+                                    description={cardData.description}
+                                    ctaLink={cardData.ctaLink}
+                                    ctaText={cardData.ctaText}
+                                />
+                            </Col>
+                        ))
+                    ) : (
+                        <Col>
+                            <p>No destination  found.</p>
                         </Col>
-                    ))}
+                    )}
                 </Row>
             </Container>
 
@@ -90,23 +96,29 @@ const Home = () => {
                 </Content>
 
                 <Row>
-                    {portraitCardsData.map((cardData) => (
-                        <Col
-                            xs={12}
-                            sm={6}
-                            md={4}
-                            lg={3}
-                            xl={3}
-                            key={cardData.id}
-                        >
-                            <PortraitCard
-                                imgUrl={cardData.imgUrl}
-                                imgAlt={cardData.imgAlt}
-                                title={cardData.title}
-                                description={cardData.description}
-                            />
+                    {portraitCardsData.length > 0 ? (
+                        portraitCardsData.map((cardData) => (
+                            <Col
+                                xs={12}
+                                sm={6}
+                                md={4}
+                                lg={3}
+                                xl={3}
+                                key={cardData.id}
+                            >
+                                <PortraitCard
+                                    imgUrl={cardData.imgUrl}
+                                    imgAlt={cardData.imgAlt}
+                                    title={cardData.title}
+                                    description={cardData.description}
+                                />
+                            </Col>
+                        ))
+                    ) : (
+                        <Col>
+                            <p>No portrait found.</p>
                         </Col>
-                    ))}
+                    )}
                 </Row>
             </Container>
 
@@ -118,25 +130,31 @@ const Home = () => {
                 <Heading>Product cards</Heading>
 
                 <Row>
-                    {productCardsData.map((cardData) => (
-                        <Col
-                            xs={12}
-                            sm={6}
-                            md={6}
-                            lg={3}
-                            xl={3}
-                            key={cardData.id}
-                        >
-                            <ProductCard
-                                imgUrl={cardData.imgUrl}
-                                imgAlt={cardData.imgAlt}
-                                title={cardData.title}
-                                description={cardData.description}
-                                ctaLink={cardData.ctaLink}
-                                ctaText={cardData.ctaText}
-                            />
+                    {productCardsData.length > 0 ? (
+                        productCardsData.map((cardData) => (
+                            <Col
+                                xs={12}
+                                sm={6}
+                                md={6}
+                                lg={3}
+                                xl={3}
+                                key={cardData.id}
+                            >
+                                <ProductCard
+                                    imgUrl={cardData.imgUrl}
+                                    imgAlt={cardData.imgAlt}
+                                    title={cardData.title}
+                                    description={cardData.description}
+                                    ctaLink={cardData.ctaLink}
+                                    ctaText={cardData.ctaText}
+                                />
+                            </Col>
+                        ))
+                    ) : (
+                        <Col>
+                            <p>No products found.</p>
                         </Col>
-                    ))}
+                    )}
                 </Row>
             </Container>
         </>
