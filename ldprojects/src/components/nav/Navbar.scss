@@ -22,7 +22,7 @@
         transition: color 0.32s ease-in-out;
 
         &:hover {
-            color: hsl(199, 89%, 63%);
+            color: hsl(245, 100%, 75%);
         }
     }
     }
@@ -74,7 +74,7 @@
                     }
 
                     &:hover {
-                        color: hsl(199, 89%, 63%);
+                        color: hsl(245, 100%, 75%);
                     }
                 }
             }
@@ -103,9 +103,14 @@
         z-index: 10002;
         text-align: right;
         cursor: pointer;
+        transition: color 0.32s ease-in-out;
 
         @media (min-width: 1024px) {
             display: none;
+        }
+
+        &:hover {
+            color: hsl(245, 100%, 75%);
         }
     }
 }

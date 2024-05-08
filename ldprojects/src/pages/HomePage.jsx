@@ -17,7 +17,7 @@ import paralaxBackgroundImage from "../assets/images/aurora-background.png";
 
 import portraitCardsData from "../assets/data/portrait-cards.json";
 import productCardsData from "../assets/data/product-cards.json";
-import destinationCardsData from "../assets/data/destination-cards.json";
+import landscapeCardsData from "../assets/data/landscape-cards.json";
 
 const Home = () => {
     return (
@@ -60,8 +60,8 @@ const Home = () => {
                 <Heading>Landscape Cards</Heading>
 
                 <Row>
-                    {destinationCardsData.length > 0 ? (
-                        destinationCardsData.map((cardData) => (
+                    {landscapeCardsData.length > 0 ? (
+                        landscapeCardsData.map((cardData) => (
                             <Col
                                 xs={12}
                                 sm={6}
