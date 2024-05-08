@@ -51,16 +51,10 @@ const Navbar = () => {
                                     </li>
                                 )}
                                 <li>
+                                    <Link to="/destinations">Destinations</Link>
+                                </li>
+                                <li>
                                     <Link to="/projects-one">ProjecstOne</Link>
-                                </li>
-                                <li>
-                                    <Link to="/about">About</Link>
-                                </li>
-                                <li>
-                                    <Link to="/blog">Blog</Link>
-                                </li>
-                                <li>
-                                    <Link to="/contact">Contact</Link>
                                 </li>
                             </ul>
                         </div>

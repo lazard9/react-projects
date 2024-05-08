@@ -2,33 +2,33 @@
     {
         "id": "1",
         "imgUrl": "./assets/destination-1.png",
-        "title": "Destination 1",
+        "title": "Landscape 1",
         "description": "Supportive text and the essential context goes here.",
         "ctaLink": "#",
-        "ctaText": "Action 1"
+        "ctaText": "Action"
     },
     {
         "id": "2",
         "imgUrl": "./assets/destination-2.jpg",
-        "title": "Destination 2",
+        "title": "Landscape 2",
         "description": "Supportive text and the essential context goes here.",
         "ctaLink": "#",
-        "ctaText": "Action 2"
+        "ctaText": "Action"
     },
     {
         "id": "3",
         "imgUrl": "./assets/destination-3.jpg",
-        "title": "Destination 3",
+        "title": "Landscape 3",
         "description": "Supportive text and the essential context goes here.",
         "ctaLink": "#",
-        "ctaText": "Action 3"
+        "ctaText": "Action"
     },
     {
         "id": "4",
         "imgUrl": "./assets/destination-4.jpg",
-        "title": "Destination 4",
+        "title": "Landscape 4",
         "description": "Supportive text and the essential context goes here.",
         "ctaLink": "#",
-        "ctaText": "Action 4"
+        "ctaText": "Action"
     }
 ]

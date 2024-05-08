@@ -1,23 +1,23 @@
 import { Link } from "react-router-dom";
 
 import Heading from "./Heading";
-import "./DestinationCard.scss";
+import "./LandscapeCard.scss";
 import verticalEllipsis from "../../assets/images/vertical-ellipsis.png";
 
-const DestinationCardAlt = ({ cardBackgroundImage, title, description, ctaLink, ctaText }) => {
+const LandscapeCardAlt = ({ cardBackgroundImage, title, description, ctaLink, ctaText }) => {
     return (
         <div
             className="destination-card alternate"
             style={{ backgroundImage: `url(${cardBackgroundImage})` }}
         >
-            <img
+            {/* <img
                 src={verticalEllipsis}
                 className="destination-card__dots"
                 alt="vertical ellipsis"
                 decoding="async"
                 width="35"
                 height="35"
-            ></img>
+            ></img> */}
             <Heading headingTag={4} headingLevel={5}>
                 {title}
             </Heading>
@@ -29,4 +29,4 @@ const DestinationCardAlt = ({ cardBackgroundImage, title, description, ctaLink, 
     );
 };
 
-export default DestinationCardAlt;
+export default LandscapeCardAlt;

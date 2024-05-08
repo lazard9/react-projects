@@ -3,13 +3,14 @@ import Row from "../components/grid/Row";
 import Col from "../components/grid/Col";
 
 import HeroSection from "../components/sections/HeroSection";
-import Slider from "../components/partials/Slider";
-import ParalaxSection from "../components/sections/ParalaxSection";
 import Heading from "../components/partials/Heading";
 import Content from "../components/partials/Content";
+
+import Slider from "../components/partials/Slider";
+import ParalaxSection from "../components/sections/ParalaxSection";
 import PortraitCard from "../components/partials/PortraitCard";
 import ProductCard from "../components/partials/ProductCard";
-import DestinationCard from "../components/partials/DestinationCard";
+import LandscapeCard from "../components/partials/LandscapeCard";
 
 import heroBackgroundImage from "../assets/images/bacground-01.jpg";
 import paralaxBackgroundImage from "../assets/images/aurora-background.png";
@@ -30,9 +31,11 @@ const Home = () => {
                 <Content textAlignment="center" spacing="minimal">
                     <p>
                         This project serves as a practice exercise, highlighting
-                        static components from my earlier projects. Rather than
-                        using a CSS framework, I decided to develop a custom
-                        grid system just for the fun of it.
+                        mostely static components on the home page from my
+                        earlier projects. Rather than using a CSS framework, I
+                        decided to develop a custom grid system just for the fun
+                        of it. Also styling and advanced layouts are not the
+                        priority.
                     </p>
                     <p>
                         Data is fetched from JSON files. To enable the test
@@ -54,7 +57,7 @@ const Home = () => {
             </Container>
 
             <Container containerWidth="lg">
-                <Heading>Destination Cards</Heading>
+                <Heading>Landscape Cards</Heading>
 
                 <Row>
                     {destinationCardsData.length > 0 ? (
@@ -67,7 +70,7 @@ const Home = () => {
                                 xl={3}
                                 key={cardData.id}
                             >
-                                <DestinationCard
+                                <LandscapeCard
                                     cardBackgroundImage={cardData.imgUrl}
                                     title={cardData.title}
                                     description={cardData.description}
@@ -78,7 +81,7 @@ const Home = () => {
                         ))
                     ) : (
                         <Col>
-                            <p>No destination  found.</p>
+                            <p>No destination found.</p>
                         </Col>
                     )}
                 </Row>

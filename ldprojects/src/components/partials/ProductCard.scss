@@ -1,8 +1,8 @@
 .product-card {
     position: relative;
     padding: 18px 19px 74px 18px;
-    color: hsl(258, 18%, 19%);
-    background-color: #fff;
+    background-color: hsl(218, 25%, 15%);
+    box-shadow: 0 5px 15px 5px hsla(218, 25%, 15%, 0.5);
     border-radius: 24px;
     height: 505px;
     box-sizing: border-box;
@@ -12,6 +12,11 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 360px;
+    transition: box-shadow 320ms ease-in-out;
+
+    &:hover {
+        box-shadow: 0 5px 20px 10px hsla(215, 26%, 18%, 0.5);
+    }
 
     // @media screen and (min-width: 576px) {
     //     width: 47%;
@@ -52,7 +57,6 @@
         line-height: 1.38;
         letter-spacing: normal;
         text-align: left;
-        color: hsl(258, 18%, 19%);
         position: relative;
         z-index: 2;
     }

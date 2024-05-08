@@ -6,7 +6,7 @@
         "title": "Card Title I",
         "description": "Supportive text and the essential context goes here.",
         "ctaLink": "#",
-        "ctaText": "Action I"
+        "ctaText": "Action"
     },
     {
         "id": "2",
@@ -15,7 +15,7 @@
         "title": "Card Title II",
         "description": "Supportive text and the essential context goes here.",
         "ctaLink": "#",
-        "ctaText": "Action II"
+        "ctaText": "Action"
     },
     {
         "id": "3",
@@ -24,7 +24,7 @@
         "title": "Card Title III",
         "description": "Supportive text and the essential context goes here.",
         "ctaLink": "#",
-        "ctaText": "Action III"
+        "ctaText": "Action"
     },
     {
         "id": "4",
@@ -33,6 +33,6 @@
         "title": "Card Title IV",
         "description": "Supportive text and the essential context goes here.",
         "ctaLink": "#",
-        "ctaText": "Action IV"
+        "ctaText": "Action"
     }
 ]

@@ -24,6 +24,9 @@ const Footer = () => {
                         </Heading>
                         <ul className="footer__list">
                             <li className="footer__list-item">
+                                <Link to="/destinations">Destinations</Link>
+                            </li>
+                            <li className="footer__list-item">
                                 <Link to="/projects-one">ProjecstOne</Link>
                             </li>
                         </ul>
