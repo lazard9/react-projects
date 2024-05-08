@@ -21,7 +21,8 @@
         color: hsl(200, 100%, 90%);
         transition: color 0.32s ease-in-out;
 
-        &:hover {
+        &:hover,
+        &.current-nav-item {
             color: hsl(245, 100%, 75%);
         }
     }
@@ -43,6 +44,23 @@
             justify-content: center;
             align-items: center;
             transition: width 0.32s ease-in-out;
+
+            .toggled & {
+                width: 100%;
+                top: 0;
+    
+                ul {
+                    li {
+                        margin: 0;
+    
+                        a {
+                            display: block;
+                            padding: 0.5rem 0;
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
         }
 
 
@@ -73,25 +91,9 @@
                         font-size: 0;
                     }
 
-                    &:hover {
+                    &:hover,
+                    &.current-nav-item {
                         color: hsl(245, 100%, 75%);
-                    }
-                }
-            }
-        }
-
-        .active & {
-            width: 100%;
-            top: 0;
-
-            ul {
-                li {
-                    margin: 0;
-
-                    a {
-                        display: block;
-                        padding: 0.5rem 0;
-                        font-size: 2rem;
                     }
                 }
             }

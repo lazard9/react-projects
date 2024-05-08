@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -31,31 +31,72 @@ const Navbar = () => {
         setIsOpen(!isOpen);
     };
 
+    const linkClass = ({ isActive }) => (isActive ? "current-nav-item" : "");
+
     return (
-        <nav className={`navbar ${isOpen ? "active" : ""}`}>
+        <nav className={`navbar ${isOpen ? "toggled" : ""}`}>
             <Container containerWidth="lg" spacing="none">
                 <Row>
                     <Col xs={6} sm={3} md={3} lg={3} xl={3}>
                         <div className="navbar--logo">
-                            <Link to="/">
+                            <NavLink to="/" className={linkClass}>
                                 <img src="/path/to/logo.png" alt="LDProjects" />
-                            </Link>
+                            </NavLink>
                         </div>
                     </Col>
                     <Col xs={6} sm={9} md={9} lg={9} xl={9}>
                         <div className="navbar--links">
                             <ul>
-                                {isMobile && (
-                                    <li>
-                                        <Link to="/">Home</Link>
-                                    </li>
+                                {isMobile ? (
+                                    <>
+                                        <li>
+                                            <NavLink
+                                                to="/"
+                                                className={linkClass}
+                                                onClick={toggleMenu}
+                                            >
+                                                Home
+                                            </NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink
+                                                to="/destinations"
+                                                className={linkClass}
+                                                onClick={toggleMenu}
+                                            >
+                                                Destinations
+                                            </NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink
+                                                to="/projects-one"
+                                                className={linkClass}
+                                                onClick={toggleMenu}
+                                            >
+                                                ProjecstOne
+                                            </NavLink>
+                                        </li>
+                                    </>
+                                ) : (
+                                    <>
+                                        <li>
+                                            <NavLink
+                                                to="/destinations"
+                                                className={linkClass}
+                                            >
+                                                Destinations
+                                            </NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink
+                                                to="/projects-one"
+                                                className={linkClass}
+                                            >
+                                                ProjecstOne
+                                            </NavLink>
+                                        </li>
+                                    </>
                                 )}
-                                <li>
-                                    <Link to="/destinations">Destinations</Link>
-                                </li>
-                                <li>
-                                    <Link to="/projects-one">ProjecstOne</Link>
-                                </li>
                             </ul>
                         </div>
                         <div className="navbar-toggle" onClick={toggleMenu}>
