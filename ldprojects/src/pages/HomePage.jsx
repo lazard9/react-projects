@@ -28,7 +28,7 @@ const Home = () => {
 
             <Container containerWidth="lg">
                 <Heading modifierClass="center">Project Overview</Heading>
-                <Content textAlignment="center" spacing="minimal">
+                <Content textAlignment="center" spacing="none">
                     <p>
                         This project serves as a practice exercise, highlighting
                         mostely static components on the home page from my

@@ -16,7 +16,7 @@ const Destiantions = () => {
 
             <Container containerWidth="lg">
                 <Heading modifierClass="center">Project Overview</Heading>
-                <Content textAlignment="center" spacing="minimal">
+                <Content textAlignment="center" spacing="none">
                     <p>
                         TBD...
                     </p>

@@ -21,7 +21,7 @@ const ProjectsOne = () => {
 
             <Container containerWidth="lg">
                 <Heading modifierClass="center">Description</Heading>
-                <Content textAlignment="center" spacing="minimal">
+                <Content textAlignment="center" spacing="none">
                     <p>
                         These projects are inspired by tasks and solutions found
                         on the Web Dev Cody and Web Dev Simplified YouTube
