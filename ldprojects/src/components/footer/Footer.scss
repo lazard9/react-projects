@@ -21,7 +21,8 @@
                 transition: color 0.32s ease-in-out;
 
                 &:hover,
-                &:focus {
+                &:focus,
+                &.current-nav-item {
                     color: hsl(245, 100%, 75%);
                 }
 

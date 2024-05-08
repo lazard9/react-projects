@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faFacebook,
@@ -14,6 +14,8 @@ import Heading from "../partials/Heading";
 import "./Footer.scss";
 
 const Footer = () => {
+    const linkClass = ({ isActive }) => (isActive ? "current-nav-item" : "");
+
     return (
         <footer className="footer">
             <Container containerWidth="lg">
@@ -24,10 +26,10 @@ const Footer = () => {
                         </Heading>
                         <ul className="footer__list">
                             <li className="footer__list-item">
-                                <Link to="/destinations">Destinations</Link>
+                                <NavLink to="/destinations" className={linkClass}>Destinations</NavLink>
                             </li>
                             <li className="footer__list-item">
-                                <Link to="/projects-one">ProjecstOne</Link>
+                                <NavLink to="/projects-one" className={linkClass}>ProjecstOne</NavLink>
                             </li>
                         </ul>
                     </Col>
@@ -37,13 +39,13 @@ const Footer = () => {
                         </Heading>
                         <ul className="footer__list">
                             <li className="footer__list-item">
-                                <Link to="/about">Who Am I</Link>
+                                <NavLink to="/about" className={linkClass}>Who Am I</NavLink>
                             </li>
                             <li className="footer__list-item">
-                                <Link to="/blog">Blog</Link>
+                                <NavLink to="/blog" className={linkClass}>Blog</NavLink>
                             </li>
                             <li className="footer__list-item">
-                                <Link to="/contact">Contact</Link>
+                                <NavLink to="/contact"  className={linkClass}>Contact</NavLink>
                             </li>
                         </ul>
                     </Col>
@@ -53,16 +55,16 @@ const Footer = () => {
                         </Heading>
                         <ul className="footer__list">
                             <li className="footer__list-item">
-                                <Link to="/">Marketing</Link>
+                                <NavLink to="/">Marketing</NavLink>
                             </li>
                             <li className="footer__list-item">
-                                <Link to="/">Consulting</Link>
+                                <NavLink to="/">Consulting</NavLink>
                             </li>
                             <li className="footer__list-item">
-                                <Link to="/">Development</Link>
+                                <NavLink to="/">Development</NavLink>
                             </li>
                             <li className="footer__list-item">
-                                <Link to="/">Design</Link>
+                                <NavLink to="/">Design</NavLink>
                             </li>
                         </ul>
                     </Col>
@@ -72,19 +74,19 @@ const Footer = () => {
                         </Heading>
                         <ul className="footer__list">
                             <li className="footer__list-item">
-                                <a href="https://www.facebook.com">
+                                <a href="https://www.facebook.com" target="_blank">
                                     <FontAwesomeIcon icon={faFacebook} />
                                     Facebook
                                 </a>
                             </li>
                             <li className="footer__list-item">
-                                <a href="https://www.instagram.com">
+                                <a href="https://www.instagram.com" target="_blank">
                                     <FontAwesomeIcon icon={faInstagram} />
                                     Instagram
                                 </a>
                             </li>
                             <li className="footer__list-item">
-                                <a href="https://www.linkedin.com">
+                                <a href="https://www.linkedin.com" target="_blank">
                                     <FontAwesomeIcon icon={faLinkedin} />
                                     LinkedIn
                                 </a>
