@@ -9,6 +9,7 @@ import Content from "../components/partials/Content";
 import TaskListHolder from "../components/projects-one/task-list/TaskListHolder";
 import FilterProductList from "../components/projects-one/filter-product-list/FilterProductList";
 import StateFromUrl from "../components/projects-one/state-from-url/StateFromUrl";
+import GuessColorGame from "../components/projects-one/guess-color-game/GuessColorGame";
 
 import heroBackgroundImage from "../assets/images/bacground-05.jpg";
 
@@ -66,6 +67,19 @@ const ProjectsOne = () => {
                         <StateFromUrl />
                     </Col>
                 </Row>
+            </Container>
+
+            <Container containerWidth="sm">
+                <Heading level={2}>Guess Color Game</Heading>
+
+                <Content maxWidth="none">
+                    Try to guess the color. After you guess it will take a few
+                    seconds to reset the colors in the field and buttons. Here I
+                    made a solution with useEffect commented out in the code. I
+                    only used useState.
+                </Content>
+
+                <GuessColorGame />
             </Container>
         </>
     );
