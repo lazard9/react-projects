@@ -73,10 +73,11 @@ const ProjectsOne = () => {
                 <Heading level={2}>Guess Color Game</Heading>
 
                 <Content maxWidth="none">
-                    Try to guess the color. After you guess it will take a few
-                    seconds for the game to reset the colors in the field and
-                    buttons. I also created a solution with useEffect which is
-                    commented out in the code. I decided to just use useState.
+                    Attempt to guess the color. Once guessed, it will take a few
+                    seconds for the game to reset the colors both in the field
+                    and on the buttons. Although I initially created a solution
+                    with useEffect, which is commented out in the code, I
+                    ultimately opted to utilize useState on my own.
                 </Content>
 
                 <GuessColorGame />
