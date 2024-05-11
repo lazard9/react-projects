@@ -74,9 +74,9 @@ const ProjectsOne = () => {
 
                 <Content maxWidth="none">
                     Try to guess the color. After you guess it will take a few
-                    seconds to reset the colors in the field and buttons. Here I
-                    made a solution with useEffect commented out in the code. I
-                    only used useState.
+                    seconds for the game to reset the colors in the field and
+                    buttons. I also created a solution with useEffect which is
+                    commented out in the code. I decided to just use useState.
                 </Content>
 
                 <GuessColorGame />
