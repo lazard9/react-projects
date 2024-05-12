@@ -14,6 +14,11 @@ const FilterProductList = () => {
             (!showCandyOnly || product.candy)
     );
 
+    function clearFields() {
+        setFilterProducts("");
+        setShowCandyOnly(false);
+    }
+
     return (
         <div className="filter-products">
             <Heading headingTag={4} headingLevel={4}>
@@ -42,6 +47,13 @@ const FilterProductList = () => {
                     />
                 </label>
             </div>
+            <button
+                aria-label="Clear search fields"
+                className="filter-products__clear-button"
+                onClick={clearFields}
+            >
+                Clear fields
+            </button>
             {filteredProducts.length > 0 ? (
                 <ul className="filter-products__list">
                     {filteredProducts.map((product, index) => (

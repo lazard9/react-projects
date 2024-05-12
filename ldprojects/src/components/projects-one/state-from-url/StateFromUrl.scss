@@ -1,7 +1,6 @@
 .url-state {
     &__input {
         margin-bottom: 15px;
-
         position: relative;
 
         label {
@@ -28,6 +27,8 @@
     }
 
     &__checkbox {
+        margin-bottom: 15px;
+
         input {
             outline: none;
             width: 0;
@@ -99,6 +100,27 @@
             height: 10px;
             border-radius: 50%;
             background-image: linear-gradient(to right, hsl(199, 89%, 63%), hsl(245, 100%, 75%));
+        }
+    }
+
+    &__clear-button {
+        width: 180px;
+        text-decoration: none;
+        padding: 5px;
+        background-color: transparent;
+        border-radius: 4px;
+        border: 1px solid hsl(200, 100%, 90%);
+        font-size: 14px;
+        text-align: center;
+        color: hsl(200, 100%, 90%);
+        cursor: pointer;
+        transition: all 0.32s ease-in-out;
+        display: inline-block;
+        box-sizing: border-box;
+
+        &:hover {
+            color: hsl(258, 18%, 19%);
+            background-color: hsl(200, 100%, 90%);
         }
     }
 }
