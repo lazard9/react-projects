@@ -35,11 +35,13 @@ const ProjectsOne = () => {
                 <Heading level={2}>Task List</Heading>
 
                 <Content maxWidth="none">
-                    The task list is largely based on the Web Dev Simplified
-                    Todo list project. Added a warning if the input field for
-                    tasks is empty. If the task has already been added, a
-                    warning will appear. Also, the first letter will be
-                    capitalized.
+                    <p>
+                        The task list is largely based on the Web Dev Simplified
+                        Todo list project. Added a warning if the input field
+                        for tasks is empty. If the task has already been added,
+                        a warning will appear. Also, the first letter will be
+                        capitalized.
+                    </p>
                 </Content>
 
                 <TaskListHolder />
@@ -49,13 +51,16 @@ const ProjectsOne = () => {
                 <Heading level={2}>URL search parameters</Heading>
 
                 <Content maxWidth="none">
-                    In this section we have a list of products that can be
-                    filtered. The first approach is classic and we use usestate.
-                    The second is without useState, but useSearchParams, which
-                    allows us to place the state in the URL. The benefits of
-                    this approach are manifold. Besides going back to the old
-                    days in web development, the URL can be copied and shared,
-                    and put in personal bookmarks etc.
+                    <p>
+                        In this section we have a list of products that can be
+                        filtered. The first approach is classic and we use
+                        usestate. The second is without useState, but
+                        useSearchParams, which allows us to place the state in
+                        the URL. The benefits of this approach are manifold.
+                        Besides going back to the old days in web development,
+                        the URL can be copied and shared, and put in personal
+                        bookmarks etc.
+                    </p>
                 </Content>
 
                 <Row>
@@ -73,11 +78,16 @@ const ProjectsOne = () => {
                 <Heading level={2}>Guess Color Game</Heading>
 
                 <Content maxWidth="none">
-                    Attempt to guess the color. Once guessed, it will take a few
-                    seconds for the game to reset the colors both in the field
-                    and on the buttons. Although I initially created a solution
-                    with useEffect, which is commented out in the code, I
-                    ultimately opted to utilize useState on my own.
+                    <p>
+                        Attempt to guess the color. Once correctly guessed, it
+                        will take a few seconds for the game to reset the colors
+                        both in the field and on the buttons.
+                    </p>
+                    <p>
+                        Although I have initially created a solution with
+                        useEffect, which is commented out in the code, I
+                        ultimately opted to utilize useState on my own.
+                    </p>
                 </Content>
 
                 <GuessColorGame />
