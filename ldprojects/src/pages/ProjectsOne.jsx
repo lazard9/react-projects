@@ -86,7 +86,7 @@ const ProjectsOne = () => {
                     <p>
                         Although I have initially created a solution with
                         useEffect, which is commented out in the code, I
-                        ultimately opted to utilize useState on my own.
+                        ultimately opted to utilize only useState.
                     </p>
                 </Content>
 
