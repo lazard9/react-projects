@@ -1,14 +1,12 @@
 import Container from "../components/grid/Container";
 import Row from "../components/grid/Row";
-import Col from "../components/grid/Col";
 
 import HeroSection from "../components/sections/HeroSection";
 import Heading from "../components/partials/Heading";
 import Content from "../components/partials/Content";
 
-import TaskListHolder from "../components/projects-one/task-list/TaskListHolder";
-import FilterProductList from "../components/projects-one/filter-product-list/FilterProductList";
-import StateFromUrl from "../components/projects-one/state-from-url/StateFromUrl";
+import TaskListHolder from "../components/projects-one/task-list/TaskListWrapper";
+import FilterProductsWrapper from "../components/projects-one/filter-product-list/FilterProductsWrapper";
 import ProductWithOptions from "../components/projects-one/product-options/ProductWithOptions";
 import GuessColorGame from "../components/projects-one/guess-color-game/GuessColorGame";
 
@@ -65,13 +63,7 @@ const ProjectsOne = () => {
                 </Content>
 
                 <Row>
-                    <Col xs={12} sm={12} md={6} lg={6} xl={6}>
-                        <FilterProductList />
-                    </Col>
-
-                    <Col xs={12} sm={12} md={6} lg={6} xl={6}>
-                        <StateFromUrl />
-                    </Col>
+                    <FilterProductsWrapper />
                 </Row>
             </Container>
 

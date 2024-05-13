@@ -22,7 +22,7 @@ const StateFromUrl = () => {
     // );
 
     const filteredResults =
-        searchParams.has("s") || searchParams.has("candy")
+        searchParams.has("s") && searchParams.has("candy")
             ? products.filter(
                   (product) =>
                       product.name
