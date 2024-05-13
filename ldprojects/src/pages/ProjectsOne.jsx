@@ -9,6 +9,7 @@ import Content from "../components/partials/Content";
 import TaskListHolder from "../components/projects-one/task-list/TaskListHolder";
 import FilterProductList from "../components/projects-one/filter-product-list/FilterProductList";
 import StateFromUrl from "../components/projects-one/state-from-url/StateFromUrl";
+import ProductWithOptions from "../components/projects-one/product-options/ProductWithOptions";
 import GuessColorGame from "../components/projects-one/guess-color-game/GuessColorGame";
 
 import heroBackgroundImage from "../assets/images/bacground-05.jpg";
@@ -64,13 +65,30 @@ const ProjectsOne = () => {
                 </Content>
 
                 <Row>
-                    <Col xs={12} sm={6} md={6} lg={6} xl={6}>
+                    <Col xs={12} sm={12} md={6} lg={6} xl={6}>
                         <FilterProductList />
                     </Col>
 
-                    <Col xs={12} sm={6} md={6} lg={6} xl={6}>
+                    <Col xs={12} sm={12} md={6} lg={6} xl={6}>
                         <StateFromUrl />
                     </Col>
+                </Row>
+            </Container>
+
+            <Container containerWidth="sm">
+                <Heading level={2}>Product With Options</Heading>
+
+                <Content maxWidth="none">
+                    <p>
+                        Choose from several product options. Quite similar to
+                        the previous project above, only that in the first
+                        example useState and useEffect are used in addition to
+                        useSearchParams.
+                    </p>
+                </Content>
+
+                <Row>
+                    <ProductWithOptions />
                 </Row>
             </Container>
 
