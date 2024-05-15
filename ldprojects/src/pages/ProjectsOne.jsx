@@ -8,6 +8,7 @@ import Content from "../components/partials/Content";
 import TaskListHolder from "../components/projects-one/task-list/TaskListWrapper";
 import FilterProductsWrapper from "../components/projects-one/filter-product-list/FilterProductsWrapper";
 import ProductWithOptions from "../components/projects-one/product-options/ProductWithOptions";
+import ProductWithOptionsUrlState from "../components/projects-one/product-options/ProductWithOptionsUrlState";
 import GuessColorGame from "../components/projects-one/guess-color-game/GuessColorGame";
 
 import heroBackgroundImage from "../assets/images/bacground-05.jpg";
@@ -24,7 +25,7 @@ const ProjectsOne = () => {
                 <Content textAlignment="center" spacing="none">
                     <p>
                         These projects are inspired by tasks and solutions found
-                        on the Web Dev Cody and Web Dev Simplified YouTube
+                        on the Web Dev Simplified, ByteGrad and Web Dev Cody
                         channels
                     </p>
                 </Content>
@@ -53,12 +54,16 @@ const ProjectsOne = () => {
                     <p>
                         In this section we have a list of products that can be
                         filtered. The first approach is classic and we use
-                        usestate. The second is without useState, but
-                        useSearchParams, which allows us to place the state in
+                        `useState``. The second is without `useState``, but
+                        `useSearchParams`, which allows us to place the state in
                         the URL. The benefits of this approach are manifold.
                         Besides going back to the old days in web development,
                         the URL can be copied and shared, and put in personal
                         bookmarks etc.
+                    </p>
+                    <p>
+                        There are buttons available to reset both games and
+                        clear the URL.
                     </p>
                 </Content>
 
@@ -71,16 +76,35 @@ const ProjectsOne = () => {
                 <Heading level={2}>Product With Options</Heading>
 
                 <Content maxWidth="none">
+                    <p>Choose from several product options.</p>
                     <p>
-                        Choose from several product options. Quite similar to
-                        the previous project above, only that in the first
-                        example useState and useEffect are used in addition to
-                        useSearchParams.
+                        Similar to the previous project, `useSearchParams` is
+                        used to set the state in the URL. The first example
+                        utilizes `useState` and `useEffect` to track changes and
+                        update query parameters. However, I would not use this
+                        solution in production because we need to decide between
+                        using `useState` and `useSearchParams`, since now we
+                        have two sources of truth. Using both is redundant and
+                        need to be sinchronized.
+                    </p>
+                    <p>
+                        The second solution uses exclusively `useSearchParams`.
+                    </p>
+                    <p>
+                        It is important to note that the parameters in the URL
+                        will not be set before interacting with the buttons, as
+                        well as that there are buttons that can be used to clear
+                        the parameters from the URL, for easier interaction with
+                        different tasks and solutions independently of each
+                        other.
                     </p>
                 </Content>
 
                 <Row>
                     <ProductWithOptions />
+                </Row>
+                <Row>
+                    <ProductWithOptionsUrlState />
                 </Row>
             </Container>
 
@@ -95,8 +119,8 @@ const ProjectsOne = () => {
                     </p>
                     <p>
                         Although I have initially created a solution with
-                        useEffect, which is commented out in the code, I
-                        ultimately opted to utilize only useState.
+                        `useEffect`, which is commented out in the code, I
+                        ultimately opted to utilize only `useState`.
                     </p>
                 </Content>
 

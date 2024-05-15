@@ -33,7 +33,6 @@ const StateFromUrl = () => {
             : products;
 
     const clearFields = () => {
-        setSearchParams({ s: "", candy: false });
         navigate("/projects-one");
     };
 

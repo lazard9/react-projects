@@ -28,12 +28,9 @@
             border: 2px solid hsl(200, 100%, 90%);
             transition: all 0.32s ease-in-out;
 
-            &:hover {
-                color: hsl(245, 100%, 75%);
-                border-color: hsl(245, 100%, 75%);
-            }
-
-            &.selected {
+            // &.selected,
+            &:hover,
+            &:has(input[type="radio"]:checked) {
                 color: hsl(245, 100%, 75%);
                 border-color: hsl(245, 100%, 75%);
             }
@@ -104,6 +101,31 @@
                     background-color: red;
                 }
             }
+        }
+    }
+
+    &__clear-button {
+        width: 180px;
+        text-decoration: none;
+        padding: 5px;
+        background-color: transparent;
+        border-radius: 4px;
+        border: 1px solid hsl(200, 100%, 90%);
+        font-size: 14px;
+        text-align: center;
+        color: hsl(200, 100%, 90%);
+        cursor: pointer;
+        transition: all 0.32s ease-in-out;
+        display: inline-block;
+        box-sizing: border-box;
+
+        &:hover {
+            color: hsl(258, 18%, 19%);
+            background-color: hsl(200, 100%, 90%);
+        }
+
+        &.margin {
+            margin-bottom: 80px;
         }
     }
 }
