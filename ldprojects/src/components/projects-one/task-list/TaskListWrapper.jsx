@@ -17,17 +17,17 @@ const TaskListHolder = () => {
     }, [tasks]);
 
     function addTask(title) {
-        if (tasks.some((task) => task.title === title)) {
-            return true; // taskExists
+        const taskExists = tasks.some((task) => task.title === title);
+    
+        if (taskExists) {
+            return { success: false, message: "Task already exists!" };
         }
-
-        setTasks((currentTasks) => [
-            ...currentTasks,
-            { id: crypto.randomUUID(), title, completed: false },
-        ]);
-
-        return false; // !taskExists
-    }
+    
+        const newTask = { id: crypto.randomUUID(), title, completed: false };
+        setTasks((currentTasks) => [...currentTasks, newTask]);
+    
+        return { success: true, message: "Task added successfully!" };
+    }    
 
     function toggleTask(id, completed) {
         setTasks((currentTasks) => {

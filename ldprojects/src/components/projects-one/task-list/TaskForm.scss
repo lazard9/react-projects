@@ -14,6 +14,7 @@
     &__start-typing {
         animation: fadeInOut 4s ease forwards;
         font-size: 0.875rem;
+        font-weight: bold;
         letter-spacing: 1px;
         font-weight: 500;
         display: block;
@@ -60,6 +61,7 @@
         background: hsl(200, 100%, 50%, 0.2);
     }
 
+    &__success-notification,
     &__duplicate-notification {
         animation: fadeInOut 4s ease forwards;
         font-size: 0.875rem;
@@ -70,6 +72,13 @@
         position: absolute;
         bottom: -28px;
         text-align: center;
+    }
+
+    &__success-notification {
+        color: hsl(135, 100%, 40%);
+    }
+
+    &__duplicate-notification {
         color: hsl(0, 100%, 40%);
     }
 }

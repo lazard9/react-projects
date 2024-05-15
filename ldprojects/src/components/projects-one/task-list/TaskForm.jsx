@@ -1,21 +1,13 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./TaskForm.scss";
 
 function TaskForm({ addTask }) {
     const [newTask, setNewTask] = useState("");
-    const [taskExists, setTaskExists] = useState(false);
+    const [taskExists, setTaskExists] = useState({
+        success: undefined,
+        message: ""
+    });
     const [showStartTyping, setShowStartTyping] = useState(false);
-
-    // useEffect(() => {
-    //     let timer;
-    //     if (taskExists) {
-    //         timer = setTimeout(() => {
-    //             setTaskExists(false);
-    //         }, 4000);
-    //     }
-
-    //     return () => clearTimeout(timer);
-    // }, [taskExists]);
 
     function handleSubmit(e) {
         e.preventDefault();
@@ -23,20 +15,23 @@ function TaskForm({ addTask }) {
             setShowStartTyping(true);
             setTimeout(() => {
                 setShowStartTyping(false);
-            }, 4000)
-            return;
+            }, 4000);
+            return () => clearTimeout(timer);
         }
 
         const exists = addTask(capitalizeFirstLetter(newTask));
 
-        if (exists) {
-            setTaskExists(true);
+        if (!exists.success) {
+            setTaskExists({ success: exists.success, message: exists.message });
             setTimeout(() => {
-                setTaskExists(false);
-            }, 4000)
+                setTaskExists({ success: undefined,  message: ""});
+            }, 4000);
         } else {
             setNewTask("");
-            setTaskExists(false);
+            setTaskExists({ success: exists.success, message: exists.message });
+            setTimeout(() => {
+                setTaskExists({ success: undefined,  message: ""});
+            }, 4000);
         }
     }
 
@@ -47,10 +42,10 @@ function TaskForm({ addTask }) {
     return (
         <form onSubmit={handleSubmit} className="task-form">
             <div className="task-form__row">
-            {showStartTyping && newTask === "" && (
-                    <span className="task-form__start-typing">Start typing...</span>
-                )}{showStartTyping && newTask === "" && (
-                    <span className="task-form__start-typing">Start typing...</span>
+                {showStartTyping && newTask === "" && (
+                    <span className="task-form__start-typing">
+                        Start typing...
+                    </span>
                 )}
                 <label htmlFor="item">Create new task:</label>
                 <input
@@ -61,8 +56,15 @@ function TaskForm({ addTask }) {
                 />
             </div>
             <button className="task-form__submit">Set tastk</button>
-            { taskExists && (
-                <span className="task-form__duplicate-notification">Task already created</span>
+            {taskExists.success === false && (
+                <span className="task-form__duplicate-notification">
+                    {taskExists.message}
+                </span>
+            )}
+            {taskExists.success === true && (
+                <span className="task-form__success-notification">
+                    {taskExists.message}
+                </span>
             )}
         </form>
     );

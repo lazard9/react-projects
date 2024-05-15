@@ -54,7 +54,7 @@ const ProjectsOne = () => {
                     <p>
                         In this section we have a list of products that can be
                         filtered. The first approach is classic and we use
-                        `useState``. The second is without `useState``, but
+                        `useState`. The second is without `useState`, but
                         `useSearchParams`, which allows us to place the state in
                         the URL. The benefits of this approach are manifold.
                         Besides going back to the old days in web development,
