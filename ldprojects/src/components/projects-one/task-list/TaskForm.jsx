@@ -5,7 +5,7 @@ function TaskForm({ addTask }) {
     const [newTask, setNewTask] = useState("");
     const [taskExists, setTaskExists] = useState({
         success: undefined,
-        message: ""
+        message: "",
     });
     const [showStartTyping, setShowStartTyping] = useState(false);
 
@@ -24,13 +24,13 @@ function TaskForm({ addTask }) {
         if (!exists.success) {
             setTaskExists({ success: exists.success, message: exists.message });
             setTimeout(() => {
-                setTaskExists({ success: undefined,  message: ""});
+                setTaskExists({ success: undefined, message: "" });
             }, 4000);
         } else {
             setNewTask("");
             setTaskExists({ success: exists.success, message: exists.message });
             setTimeout(() => {
-                setTaskExists({ success: undefined,  message: ""});
+                setTaskExists({ success: undefined, message: "" });
             }, 4000);
         }
     }
