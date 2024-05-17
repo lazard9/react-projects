@@ -45,6 +45,7 @@ const ProductWithOptions = () => {
                     <div className="product-options__sizes">
                         {sizeMap.map((item) => (
                             <label
+                                key={item}
                                 className="size-option"
                                 // className={`size-option ${
                                 //     selectedSize === item ? "selected" : ""

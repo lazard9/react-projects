@@ -7,13 +7,13 @@
     }
 
     &--button {
-        width: 180px;
+        width: 150px;
         text-decoration: none;
-        padding: 15px;
+        padding: 12px;
         background-color: transparent;
         border-radius: 8px;
         border: 2px solid hsl(200, 100%, 90%);
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 600;
         text-align: center;
         color: hsl(200, 100%, 90%);
@@ -22,10 +22,17 @@
         display: inline-block;
         box-sizing: border-box;
         margin-right: 20px;
+        margin-bottom: 1rem;
 
         &:hover {
             color: hsl(258, 18%, 19%);
             background-color: hsl(200, 100%, 90%);
+        }
+
+        @media (min-width: 1024px) {
+            width: 180px;
+            font-size: 18px;
+            padding: 15px;
         }
     }
 

@@ -4,6 +4,12 @@
     background-color: hsl(221, 21%, 18%);
     color: hsl(200, 100%, 90%);
 
+    @media (max-width: 575px) {
+        .container {
+            max-width: 280px;
+        }
+    }
+
     &__list {
         list-style: none;
         padding-left: 0;
