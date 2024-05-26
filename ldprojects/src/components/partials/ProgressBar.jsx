@@ -1,25 +1,32 @@
-import { useState } from "react";
+import { Component } from "react";
 import "./ProgressBar.scss";
 
-const ProgressBar = () => {
-    const [scroll, setScroll] = useState(0);
+class ProgressBar extends Component {
+    state = {
+        scroll: 0
+    };
 
-    const handleScroll = () => {
+    handleScroll = () => {
         const scrollTop = window.scrollY;
         const windowHeight = window.innerHeight;
         const bodyHeight = document.body.scrollHeight - windowHeight;
         const scrollPercentage = (scrollTop / bodyHeight) * 100;
-        setScroll(scrollPercentage);
+        this.setState({ scroll: scrollPercentage });
     };
 
-    window.addEventListener("scroll", handleScroll);
+    componentDidMount() {
+        window.addEventListener("scroll", this.handleScroll);
+        this.handleScroll();
+    }
 
-    handleScroll();
+    componentWillUnmount() {
+        window.removeEventListener("scroll", this.handleScroll);
+    }
 
-    return <div className="progress-bar" style={{ width: `${scroll}%` }}></div>;
-};
-
-// Cleanup function
-window.removeEventListener("scroll", handleScroll);
+    render() {
+        const { scroll } = this.state;
+        return <div className="progress-bar" style={{ width: `${scroll}%` }}></div>;
+    }
+}
 
 export default ProgressBar;
