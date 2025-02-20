@@ -1,0 +1,85 @@
+{
+    "slides": [
+        {
+            "id": "1",
+            "imgUrl": "./assets/slider-01.png",
+            "imgAlt": "Scenic view of destination 1",
+            "title": "Slider Title I",
+            "shortDescription": "Discover the beauty of this amazing place.",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "ctaText": "Explore Now"
+        },
+        {
+            "id": "2",
+            "imgUrl": "./assets/slider-02.png",
+            "imgAlt": "Beautiful landscape of destination 2",
+            "title": "Slider Title II",
+            "shortDescription": "A paradise waiting to be explored.",
+            "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "ctaText": "Visit Now"
+        },
+        {
+            "id": "3",
+            "imgUrl": "./assets/slider-03.jpg",
+            "imgAlt": "Magnificent view of destination 3",
+            "title": "Slider Title III",
+            "shortDescription": "Unforgettable experiences await you.",
+            "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+            "ctaText": "Book Now"
+        },
+        {
+            "id": "4",
+            "imgUrl": "./assets/slider-01.png",
+            "imgAlt": "Breathtaking scenery at destination 4",
+            "title": "Slider Title IV",
+            "shortDescription": "A hidden gem worth discovering.",
+            "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+            "ctaText": "See More"
+        },
+        {
+            "id": "5",
+            "imgUrl": "./assets/slider-02.png",
+            "imgAlt": "Serene environment of destination 5",
+            "title": "Slider Title V",
+            "shortDescription": "A peaceful retreat from the busy world.",
+            "description": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+            "ctaText": "Find Out More"
+        },
+        {
+            "id": "6",
+            "imgUrl": "./assets/slider-03.jpg",
+            "imgAlt": "Sunset view at destination 6",
+            "title": "Slider Title VI",
+            "shortDescription": "A spectacular place to relax and enjoy.",
+            "description": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.",
+            "ctaText": "Plan Your Trip"
+        },
+        {
+            "id": "7",
+            "imgUrl": "./assets/slider-01.png",
+            "imgAlt": "Adventure spot at destination 7",
+            "title": "Slider Title VII",
+            "shortDescription": "For those who love adventure and exploration.",
+            "description": "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+            "ctaText": "Start Your Journey"
+        },
+        {
+            "id": "8",
+            "imgUrl": "./assets/slider-02.png",
+            "imgAlt": "Relaxing beachfront at destination 8",
+            "title": "Slider Title VIII",
+            "shortDescription": "The perfect escape for sun and sea lovers.",
+            "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.",
+            "ctaText": "Get Inspired"
+        },
+        {
+            "id": "9",
+            "imgUrl": "./assets/slider-03.jpg",
+            "imgAlt": "Majestic mountains at destination 9",
+            "title": "Slider Title IX",
+            "shortDescription": "A dream destination for nature lovers.",
+            "description": "Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.",
+            "ctaText": "Discover More"
+        }
+    ]
+}

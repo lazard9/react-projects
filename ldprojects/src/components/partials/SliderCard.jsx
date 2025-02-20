@@ -6,13 +6,13 @@ import CtaInternalLink from "./CtaInternalLink";
 import "./SliderCard.scss";
 
 const SliderCard = ({ slide }) => {
-    const { imgUrl, title, description, ctaText } = slide
+    const { imgUrl, imgAlt = "Default Alt", title, shortDescription, ctaText = "Default CTA" } = slide
 
     return (
         <div className="slider-card">
             <div className="slider-card--flex-left">
-                <div className="slider-card--image-holder">
-                    <CardImage imgUrl={imgUrl} altText="Some image" />
+                <div className="slider-card--image-hold{{er">
+                    <CardImage imgUrl={imgUrl} altText={imgAlt} />
                 </div>
             </div>
             <div className="slider-card--flex-right">
@@ -21,7 +21,7 @@ const SliderCard = ({ slide }) => {
                 </Heading>
                 <Content maxWidth="none" spacing="minimal">
                     <p>
-                        {description}
+                        {shortDescription}
                     </p>
                 </Content>
                 <CtaInternalLink link="">{ctaText}</CtaInternalLink>
