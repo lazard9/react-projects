@@ -10,12 +10,12 @@ const SliderCard = ({ slide }) => {
 
     return (
         <div className="slider-card">
-            <div className="slider-card--flex-left">
-                <div className="slider-card--image-hold{{er">
+            <div className="slider-card__flex-left">
+                <div className="slider-card__image-holder">
                     <CardImage imgUrl={imgUrl} altText={imgAlt} />
                 </div>
             </div>
-            <div className="slider-card--flex-right">
+            <div className="slider-card__flex-right">
                 <Heading headingTag={3} headingLevel={1} modifierClass="hero">
                     {title}
                 </Heading>

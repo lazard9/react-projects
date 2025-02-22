@@ -7,12 +7,12 @@ import verticalEllipsis from "../../assets/images/vertical-ellipsis.png";
 const LandscapeCardAlt = ({ cardBackgroundImage, title, description, ctaLink, ctaText }) => {
     return (
         <div
-            className="destination-card alternate"
+            className="landscape-card alternate"
             style={{ backgroundImage: `url(${cardBackgroundImage})` }}
         >
             {/* <img
                 src={verticalEllipsis}
-                className="destination-card__dots"
+                className="landscape-card__dots"
                 alt="vertical ellipsis"
                 decoding="async"
                 width="35"
@@ -21,8 +21,8 @@ const LandscapeCardAlt = ({ cardBackgroundImage, title, description, ctaLink, ct
             <Heading headingTag={4} headingLevel={5}>
                 {title}
             </Heading>
-            <p className="destination-card__description">{description}</p>
-            <Link to={ctaLink} className="destination-card__cta">
+            <p className="landscape-card__description">{description}</p>
+            <Link to={ctaLink} className="landscape-card__cta">
                 {ctaText}
             </Link>
         </div>
