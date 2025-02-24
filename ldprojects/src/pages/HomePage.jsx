@@ -68,6 +68,8 @@ const Home = () => {
                                 md={6}
                                 lg={3}
                                 xl={3}
+                                margin={3}
+                                marginLg={4}
                                 key={cardData.id}
                             >
                                 <LandscapeCard
@@ -107,6 +109,8 @@ const Home = () => {
                                 md={4}
                                 lg={3}
                                 xl={3}
+                                margin={3}
+                                marginLg={4}
                                 key={cardData.id}
                             >
                                 <PortraitCard
@@ -141,6 +145,8 @@ const Home = () => {
                                 md={6}
                                 lg={3}
                                 xl={3}
+                                margin={3}
+                                marginLg={4}
                                 key={cardData.id}
                             >
                                 <ProductCard

@@ -64,6 +64,8 @@ const Destiantions = () => {
                                 md={6}
                                 lg={4}
                                 xl={4}
+                                margin={3}
+                                marginLg={4}
                                 key={destination.id}
                             >
                                 <DestinationCard

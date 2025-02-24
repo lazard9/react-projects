@@ -92,7 +92,7 @@ const GuessColorGame = () => {
                 }}
             ></div>
             <button
-                className="guess-color--button"
+                className="guess-color__button"
                 onClick={gameActive ? () => compareColors(colors[0]) : () => {}}
                 // style={{
                 //     backgroundColor: colors[0],
@@ -101,7 +101,7 @@ const GuessColorGame = () => {
                 {colors[0]}
             </button>
             <button
-                className="guess-color--button"
+                className="guess-color__button"
                 onClick={gameActive ? () => compareColors(colors[1]) : () => {}}
                 // style={{
                 //     backgroundColor: colors[1],
@@ -110,7 +110,7 @@ const GuessColorGame = () => {
                 {colors[1]}
             </button>
             <button
-                className="guess-color--button"
+                className="guess-color__button"
                 onClick={gameActive ? () => compareColors(colors[2]) : () => {}}
                 // style={{
                 //     backgroundColor: colors[2],

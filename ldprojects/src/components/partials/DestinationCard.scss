@@ -6,6 +6,9 @@
     box-sizing: border-box;
     overflow: hidden;
     transition: box-shadow 320ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 
     &:hover {
         box-shadow: 0 5px 20px 10px hsla(215, 26%, 18%, 0.5);
@@ -15,5 +18,9 @@
         &__image-holder {
             margin-bottom: 24px;
         }
+    }
+
+    .cta-internal-link {
+        margin-top: auto;
     }
 }

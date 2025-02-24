@@ -20,7 +20,7 @@ const Footer = () => {
         <footer className="footer">
             <Container containerWidth="lg">
                 <Row>
-                    <Col sm={6} md={6} lg={3} xl={3}>
+                    <Col sm={6} md={6} lg={3} xl={3} margin={3}>
                         <Heading headingTag={5} headingLevel={4}>
                             Work Showcase
                         </Heading>
@@ -33,7 +33,7 @@ const Footer = () => {
                             </li>
                         </ul>
                     </Col>
-                    <Col sm={6} md={6} lg={3} xl={3}>
+                    <Col sm={6} md={6} lg={3} xl={3} margin={3}>
                         <Heading headingTag={5} headingLevel={4}>
                             About
                         </Heading>
@@ -49,7 +49,7 @@ const Footer = () => {
                             </li>
                         </ul>
                     </Col>
-                    <Col sm={6} md={6} lg={3} xl={3}>
+                    <Col sm={6} md={6} lg={3} xl={3} margin={3}>
                         <Heading headingTag={5} headingLevel={4}>
                             Services
                         </Heading>
@@ -68,7 +68,7 @@ const Footer = () => {
                             </li>
                         </ul>
                     </Col>
-                    <Col sm={6} md={6} lg={3} xl={3}>
+                    <Col sm={6} md={6} lg={3} xl={3} margin={3}>
                         <Heading headingTag={5} headingLevel={4}>
                             Social
                         </Heading>
