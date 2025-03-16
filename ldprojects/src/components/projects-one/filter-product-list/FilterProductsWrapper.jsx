@@ -1,6 +1,6 @@
 import Col from "../../grid/Col";
 import FilterProductList from "./FilterProductList";
-import StateFromUrl from "./StateFromUrl";
+import FilterProductListStateFromUrl from "./FilterProductListStateFromUrl";
 
 const FilterProductsWrapper = () => {
     return (
@@ -10,7 +10,7 @@ const FilterProductsWrapper = () => {
             </Col>
 
             <Col xs={12} sm={12} md={6} lg={6} xl={6}>
-                <StateFromUrl />
+                <FilterProductListStateFromUrl />
             </Col>
         </>
     );

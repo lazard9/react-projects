@@ -2,9 +2,9 @@ import { useSearchParams, useNavigate } from "react-router-dom";
 import products from "../../../assets/data/products.json";
 import Heading from "../../partials/Heading";
 
-import "./StateFromUrl.scss";
+import "./FilterProductListStateFromUrl.scss";
 
-const StateFromUrl = () => {
+const FilterProductListStateFromUrl = () => {
     const [searchParams, setSearchParams] = useSearchParams({
         s: "",
         candy: false,
@@ -132,4 +132,4 @@ const StateFromUrl = () => {
     );
 };
 
-export default StateFromUrl;
+export default FilterProductListStateFromUrl;
