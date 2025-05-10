@@ -4,6 +4,10 @@
     max-width: 100%;
     position: relative;
 
+    .col {
+        align-content: center;
+    }
+
     &--inner {
         display: flex;
         justify-content: space-between;
@@ -17,15 +21,27 @@
         z-index: 10000;
 
         a {
-        text-decoration: none;
-        color: hsl(200, 100%, 90%);
-        transition: color 0.32s ease-in-out;
+            position: relative;
+            text-decoration: none;
+            color: hsl(200, 100%, 90%);
+            transition: color 0.32s ease-in-out;
 
-        &:hover,
-        &.current-nav-item {
-            color: hsl(245, 100%, 75%);
+            &:hover,
+            &.current-nav-item {
+                color: hsl(245, 100%, 75%);
+            }
+
         }
-    }
+
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 120px;
+
+            @media (min-width: 1024px) {
+                max-width: 200px;
+            }
+        }
     }
 
     &--links {
@@ -48,11 +64,11 @@
             .toggled & {
                 width: 100%;
                 top: 0;
-    
+
                 ul {
                     li {
                         margin: 0;
-    
+
                         a {
                             display: block;
                             padding: 0.5rem 0;
@@ -86,6 +102,7 @@
                     text-decoration: none;
                     color: hsl(200, 100%, 90%);
                     transition: color 0.32s ease-in-out;
+                    font-size: 1.25rem;
 
                     @media (max-width: 1023px) {
                         font-size: 0;

@@ -100,7 +100,7 @@ const ProjectsOne = () => {
                     </p>
                 </Content>
 
-                <Row>
+                <Row margin={4} marginLg={6}>
                     <ProductWithOptions />
                 </Row>
                 <Row>

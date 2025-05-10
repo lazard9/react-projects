@@ -1,8 +1,8 @@
 import "./Row.scss";
 
-const Row = ({ children }) => {
+const Row = ({ margin, marginLg, children }) => {
     return (
-        <div className="row">
+        <div className={`row ${margin ? `mb-col-${margin}` : ""}  ${marginLg ? `mb-col-${marginLg}` : ""}`}>
             {children}
         </div>
     );

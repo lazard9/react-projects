@@ -7,6 +7,8 @@ import Container from "../grid/Container";
 import Row from "../grid/Row";
 import Col from "../grid/Col";
 
+import siteLog from "../../assets/images/ldprojects-logo-520-min.png";
+
 import "./Navbar.scss";
 
 const Navbar = () => {
@@ -40,7 +42,7 @@ const Navbar = () => {
                     <Col xs={6} sm={3} md={3} lg={3} xl={3}>
                         <div className="navbar--logo">
                             <NavLink to="/" className={linkClass}>
-                                <img src="/path/to/logo.png" alt="LDProjects" />
+                                <img src={siteLog} alt="LDProjects site logo" />
                             </NavLink>
                         </div>
                     </Col>

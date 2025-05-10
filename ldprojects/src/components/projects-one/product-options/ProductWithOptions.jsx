@@ -61,7 +61,7 @@ const ProductWithOptions = () => {
                     }}
                 ></div>
             </Col>
-            <Col xs={12} sm={6} md={6} lg={6} xl={6} margin={6}>
+            <Col xs={12} sm={6} md={6} lg={6} xl={6}>
                 <div className="product-options">
                     <p>Select size:</p>
                     <div className="product-options__sizes">
