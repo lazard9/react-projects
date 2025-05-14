@@ -47,7 +47,10 @@ const Destiantions = () => {
 
                 <Content textAlignment="center" spacing="minimal">
                     <p>
-                        Keep track of places you love or dream of visiting. Add your favorite destinations, write down your thoughts, and build your personal travel list—one memory at a time.
+                        Keep track of places you love or dream of visiting. 
+                        This page lets you manage your favorite destinations - 
+                        you can add, edit, or delete entries. 
+                        It’s also a practical example of CRUD operations in React.
                     </p>
 
                     <CtaInternalLink link="/destinations/new">Add new destination</CtaInternalLink>
