@@ -1,56 +1,56 @@
 [
     {
         "id": "1",
-        "imgUrl": "./assets/card-1.png",
+        "imgUrl": "/media/card-1.png",
         "imgAlt": "some text",
         "title": "Bullet Title",
         "description": "Supportive text and the essential context goes here."
     },
     {
         "id": "2",
-        "imgUrl": "./assets/card-2.png",
+        "imgUrl": "/media/card-2.png",
         "imgAlt": "some text",
         "title": "Bullet Title",
         "description": "Supportive text and the essential context goes here."
     },
     {
         "id": "3",
-        "imgUrl": "./assets/card-3.png",
+        "imgUrl": "/media/card-3.png",
         "imgAlt": "some text",
         "title": "Bullet Title",
         "description": "Supportive text and the essential context goes here."
     },
     {
         "id": "4",
-        "imgUrl": "./assets/card-4.png",
+        "imgUrl": "/media/card-4.png",
         "imgAlt": "some text",
         "title": "Bullet Title",
         "description": "Supportive text and the essential context goes here."
     },
     {
         "id": "5",
-        "imgUrl": "./assets/card-5.png",
+        "imgUrl": "/media/card-5.png",
         "imgAlt": "some text",
         "title": "Bullet Title",
         "description": "Supportive text and the essential context goes here."
     },
     {
         "id": "6",
-        "imgUrl": "./assets/card-6.png",
+        "imgUrl": "/media/card-6.png",
         "imgAlt": "some text",
         "title": "Bullet Title",
         "description": "Supportive text and the essential context goes here."
     },
     {
         "id": "7",
-        "imgUrl": "./assets/card-7.png",
+        "imgUrl": "/media/card-7.png",
         "imgAlt": "some text",
         "title": "Bullet Title",
         "description": "Supportive text and the essential context goes here."
     },
     {
         "id": "8",
-        "imgUrl": "./assets/card-8.png",
+        "imgUrl": "/media/card-8.png",
         "imgAlt": "some text",
         "title": "Bullet Title",
         "description": "Supportive text and the essential context goes here."

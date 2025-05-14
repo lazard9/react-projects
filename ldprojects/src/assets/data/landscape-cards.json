@@ -1,7 +1,7 @@
 [
     {
         "id": "1",
-        "imgUrl": "./assets/landscape-1.png",
+        "imgUrl": "/media/landscape-1.png",
         "title": "Landscape 1",
         "description": "Supportive text and the essential context goes here.",
         "ctaLink": "#",
@@ -9,7 +9,7 @@
     },
     {
         "id": "2",
-        "imgUrl": "./assets/landscape-2.jpg",
+        "imgUrl": "/media/landscape-2.jpg",
         "title": "Landscape 2",
         "description": "Supportive text and the essential context goes here.",
         "ctaLink": "#",
@@ -17,7 +17,7 @@
     },
     {
         "id": "3",
-        "imgUrl": "./assets/landscape-3.jpg",
+        "imgUrl": "/media/landscape-3.jpg",
         "title": "Landscape 3",
         "description": "Supportive text and the essential context goes here.",
         "ctaLink": "#",
@@ -25,7 +25,7 @@
     },
     {
         "id": "4",
-        "imgUrl": "./assets/landscape-4.jpg",
+        "imgUrl": "/media/landscape-4.jpg",
         "title": "Landscape 4",
         "description": "Supportive text and the essential context goes here.",
         "ctaLink": "#",
