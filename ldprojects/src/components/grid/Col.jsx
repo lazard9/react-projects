@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import "./Col.scss";
 
 const Col = ({ xs, sm, md, lg, xl, margin, marginLg, children }) => {
@@ -8,6 +9,17 @@ const Col = ({ xs, sm, md, lg, xl, margin, marginLg, children }) => {
             {children}
         </div>
     );
+};
+
+Col.propTypes = {
+    xs: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    sm: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    md: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    lg: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    xl: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    margin: PropTypes.string,
+    marginLg: PropTypes.string,
+    children: PropTypes.node,
 };
 
 export default Col;

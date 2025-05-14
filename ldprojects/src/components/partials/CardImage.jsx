@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import "./CardImage.scss";
 
 const CardImage = ({ imgUrl, altText, rounded }) => {
@@ -13,6 +14,12 @@ const CardImage = ({ imgUrl, altText, rounded }) => {
             />
         </>
     );
+};
+
+CardImage.propTypes = {
+    imgUrl: PropTypes.string.isRequired,
+    altText: PropTypes.string,
+    rounded: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
 };
 
 export default CardImage;

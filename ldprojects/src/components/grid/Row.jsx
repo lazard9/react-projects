@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import "./Row.scss";
 
 const Row = ({ margin, marginLg, children }) => {
@@ -6,6 +7,12 @@ const Row = ({ margin, marginLg, children }) => {
             {children}
         </div>
     );
+};
+
+Row.propTypes = {
+    margin: PropTypes.string,
+    marginLg: PropTypes.string,
+    children: PropTypes.node,
 };
 
 export default Row;

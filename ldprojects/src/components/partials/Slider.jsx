@@ -25,7 +25,7 @@ const Slider = () => {
 
     useEffect(() => {
         const fetchJobs = async () => {
-            const apiUrl = "/api/slides";
+            const apiUrl = "/api/destinations";
 
             try {
                 const res = await fetch(apiUrl);

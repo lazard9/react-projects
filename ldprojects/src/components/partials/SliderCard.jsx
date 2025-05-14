@@ -1,12 +1,12 @@
+import PropTypes from 'prop-types';
 import CardImage from "./CardImage";
 import Heading from "./Heading";
 import Content from "./Content";
 import CtaInternalLink from "./CtaInternalLink";
-
 import "./SliderCard.scss";
 
 const SliderCard = ({ slide }) => {
-    const { imgUrl, imgAlt = "Default Alt", title, shortDescription, ctaText = "Default CTA" } = slide
+    const { imgUrl, imgAlt = "Default Alt", title, shortDescription, ctaText = "Default CTA" } = slide;
 
     return (
         <div className="slider-card">
@@ -20,14 +20,22 @@ const SliderCard = ({ slide }) => {
                     {title}
                 </Heading>
                 <Content maxWidth="none" spacing="minimal">
-                    <p>
-                        {shortDescription}
-                    </p>
+                    <p>{shortDescription}</p>
                 </Content>
                 <CtaInternalLink link="">{ctaText}</CtaInternalLink>
             </div>
         </div>
     );
+};
+
+SliderCard.propTypes = {
+    slide: PropTypes.shape({
+        imgUrl: PropTypes.string.isRequired,
+        imgAlt: PropTypes.string,
+        title: PropTypes.string.isRequired,
+        shortDescription: PropTypes.string.isRequired,
+        ctaText: PropTypes.string,
+    }).isRequired,
 };
 
 export default SliderCard;

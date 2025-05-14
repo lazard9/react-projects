@@ -18,7 +18,7 @@ const Destiantions = () => {
 
     useEffect(() => {
         const fetchJobs = async () => {
-            const apiUrl = "/api/slides";
+            const apiUrl = "/api/destinations";
 
             try {
                 const res = await fetch(apiUrl);
@@ -50,7 +50,7 @@ const Destiantions = () => {
                         Keep track of places you love or dream of visiting. Add your favorite destinations, write down your thoughts, and build your personal travel list—one memory at a time.
                     </p>
 
-                    <CtaInternalLink link="/add-destination">Add new destination</CtaInternalLink>
+                    <CtaInternalLink link="/destinations/new">Add new destination</CtaInternalLink>
                 </Content>
             </Container>
 

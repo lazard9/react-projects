@@ -1,8 +1,7 @@
+import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
-
 import Heading from "./Heading";
 import "./LandscapeCard.scss";
-// import verticalEllipsis from "../../assets/images/vertical-ellipsis.png";
 
 const LandscapeCardAlt = ({ cardBackgroundImage, title, description, ctaLink, ctaText }) => {
     return (
@@ -27,6 +26,14 @@ const LandscapeCardAlt = ({ cardBackgroundImage, title, description, ctaLink, ct
             </Link>
         </div>
     );
+};
+
+LandscapeCardAlt.propTypes = {
+    cardBackgroundImage: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    ctaLink: PropTypes.string.isRequired,
+    ctaText: PropTypes.string.isRequired,
 };
 
 export default LandscapeCardAlt;

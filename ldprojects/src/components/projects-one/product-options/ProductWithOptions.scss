@@ -31,8 +31,8 @@
             // &.selected,
             &:hover,
             &:has(input[type="radio"]:checked) {
-                color: hsl(245, 100%, 75%);
-                border-color: hsl(245, 100%, 75%);
+                color: hsl(263, 94%, 65%);
+                border-color: hsl(263, 94%, 65%);
             }
 
             input[type="radio"] {
@@ -50,7 +50,7 @@
         }
 
         input[type="radio"]:checked ~ .checkmark {
-            border-color: hsl(245, 100%, 75%);
+            border-color: hsl(263, 94%, 65%);
         }
 
         .color-option {
@@ -66,7 +66,7 @@
                 transition: border-color 0.32s ease-in-out;
 
                 &:hover {
-                    border-color: hsl(245, 100%, 75%);
+                    border-color: hsl(263, 94%, 65%);
                 }
 
                 &.black {

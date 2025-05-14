@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import Heading from "./Heading";
 import CardImage from "./CardImage";
 import "./PortraitCard.scss";
@@ -12,6 +13,13 @@ const CardPortrait = ({ imgUrl, imgAlt, title, description }) => {
             <p className="portrait-card__description">{description}</p>
         </div>
     );
+};
+
+CardPortrait.propTypes = {
+    imgUrl: PropTypes.string.isRequired,
+    imgAlt: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
 };
 
 export default CardPortrait;

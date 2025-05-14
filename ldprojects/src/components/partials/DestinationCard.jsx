@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import CardImage from "./CardImage";
 import Heading from "./Heading";
 import Content from "./Content";
@@ -6,7 +7,7 @@ import CtaInternalLink from "./CtaInternalLink";
 import "./DestinationCard.scss";
 
 const SliderCard = ({ destination }) => {
-    const { imgUrl, imgAlt = "Default Alt", title, description, ctaText = "Default CTA" } = destination
+    const { imgUrl, imgAlt = "Default Alt", title, description, ctaText = "Default CTA" } = destination;
 
     return (
         <div className="destination-card">
@@ -24,6 +25,16 @@ const SliderCard = ({ destination }) => {
             <CtaInternalLink link="">{ctaText}</CtaInternalLink>
         </div>
     );
+};
+
+SliderCard.propTypes = {
+    destination: PropTypes.shape({
+        imgUrl: PropTypes.string.isRequired,
+        imgAlt: PropTypes.string,
+        title: PropTypes.string.isRequired,
+        description: PropTypes.string.isRequired,
+        ctaText: PropTypes.string,
+    }).isRequired,
 };
 
 export default SliderCard;

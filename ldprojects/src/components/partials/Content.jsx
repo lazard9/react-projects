@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import "./Content.scss";
 
 const Content = ({ textAlignment, maxWidth, spacing, children }) => {
@@ -10,6 +11,13 @@ const Content = ({ textAlignment, maxWidth, spacing, children }) => {
             {children}
         </div>
     );
+};
+
+Content.propTypes = {
+    textAlignment: PropTypes.oneOf(['left', 'center', 'right']),
+    maxWidth: PropTypes.string,
+    spacing: PropTypes.oneOf(['none', 'small', 'medium', 'large']),
+    children: PropTypes.node.isRequired,
 };
 
 export default Content;

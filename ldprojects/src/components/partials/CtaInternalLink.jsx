@@ -1,8 +1,8 @@
-import { Link } from 'react-router-dom'
-import "./CtaInternalLink.scss";
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+import './CtaInternalLink.scss';
 
 const CtaButton = ({ link, children }) => {
-
     return (
         <Link to={link} className="cta-internal-link">
             {children}
@@ -10,5 +10,9 @@ const CtaButton = ({ link, children }) => {
     );
 };
 
+CtaButton.propTypes = {
+    link: PropTypes.string.isRequired,
+    children: PropTypes.node.isRequired,
+};
 
-export default CtaButton
+export default CtaButton;
