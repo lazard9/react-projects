@@ -8,6 +8,7 @@ import Heading from "../components/partials/Heading";
 import Content from "../components/partials/Content";
 import HeroSection from "../components/sections/HeroSection";
 import heroBackgroundImage from "../assets/images/bacground-02.jpg";
+import CtaInternalLink from "../components/partials/CtaInternalLink";
 
 import DestinationCard from "../components/partials/DestinationCard";
 
@@ -41,13 +42,28 @@ const Destiantions = () => {
 
             <Container containerWidth="lg">
                 <Heading modifierClass="center">
+                    Discover & Add Your Favorite Destinations
+                </Heading>
+
+                <Content textAlignment="center" spacing="minimal">
+                    <p>
+                        Keep track of places you love or dream of visiting. Add your favorite destinations, write down your thoughts, and build your personal travel list—one memory at a time.
+                    </p>
+
+                    <CtaInternalLink link="/add-destination">Add new destination</CtaInternalLink>
+                </Content>
+            </Container>
+
+            <Container containerWidth="lg">
+                <Heading modifierClass="center">
                     Overview of all destinations
                 </Heading>
+
                 <Content textAlignment="center" spacing="minimal">
                     <p>
                         Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
+                        industry`&apos;`s standard dummy text ever since the 1500s,
                         when an unknown printer took a galley of type and
                         scrambled it to make a type specimen book.
                     </p>

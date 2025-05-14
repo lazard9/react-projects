@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 import Heading from "./Heading";
 import "./LandscapeCard.scss";
-import verticalEllipsis from "../../assets/images/vertical-ellipsis.png";
+// import verticalEllipsis from "../../assets/images/vertical-ellipsis.png";
 
 const LandscapeCardAlt = ({ cardBackgroundImage, title, description, ctaLink, ctaText }) => {
     return (

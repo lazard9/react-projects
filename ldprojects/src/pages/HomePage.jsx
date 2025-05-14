@@ -39,8 +39,8 @@ const Home = () => {
                     </p>
                     <p>
                         Data is fetched from JSON files. To enable the test
-                        slider, start the JSON server using the command "npm run
-                        server" before launching the project.
+                        slider, start the JSON server using the command `&quot;`npm run
+                        server`&quot;` before launching the project.
                     </p>
                     <p>
                         Navigate through the menu to explore different project
