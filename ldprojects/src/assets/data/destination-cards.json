@@ -1,94 +1,85 @@
 {
-    "destinations": [
-        {
-            "id": "1",
-            "title": "Destination Title I",
-            "slug": "destination-title-i",
-            "imgUrl": "/media/destination-01.png",
-            "imgAlt": "Scenic view of destination 1",
-            "shortDescription": "Discover the beauty of this amazing place.",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            "ctaText": "Explore Now"
-        },
-        {
-            "id": "2",
-            "title": "Destination Title II",
-            "slug": "destination-title-ii",
-            "imgUrl": "/media/destination-02.png",
-            "imgAlt": "Beautiful landscape of destination 2",
-            "shortDescription": "A paradise waiting to be explored.",
-            "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            "ctaText": "Visit Now"
-        },
-        {
-            "id": "3",
-            "title": "Destination Title III",
-            "slug": "destination-title-iii",
-            "imgUrl": "/media/destination-03.jpg",
-            "imgAlt": "Magnificent view of destination 3",
-            "shortDescription": "Unforgettable experiences await you.",
-            "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
-            "ctaText": "Book Now"
-        },
-        {
-            "id": "4",
-            "title": "Destination Title IV",
-            "slug": "destination-title-iv",
-            "imgUrl": "/media/destination-01.png",
-            "imgAlt": "Breathtaking scenery at destination 4",
-            "shortDescription": "A hidden gem worth discovering.",
-            "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
-            "ctaText": "See More"
-        },
-        {
-            "id": "5",
-            "title": "Destination Title V",
-            "slug": "destination-title-v",
-            "imgUrl": "/media/destination-02.png",
-            "imgAlt": "Serene environment of destination 5",
-            "shortDescription": "A peaceful retreat from the busy world.",
-            "description": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
-            "ctaText": "Find Out More"
-        },
-        {
-            "id": "6",
-            "title": "Destination Title VI",
-            "slug": "destination-title-vi",
-            "imgUrl": "/media/destination-03.jpg",
-            "imgAlt": "Sunset view at destination 6",
-            "shortDescription": "A spectacular place to relax and enjoy.",
-            "description": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.",
-            "ctaText": "Plan Your Trip"
-        },
-        {
-            "id": "7",
-            "title": "Destination Title VII",
-            "slug": "destination-title-vii",
-            "imgUrl": "/media/destination-01.png",
-            "imgAlt": "Adventure spot at destination 7",
-            "shortDescription": "For those who love adventure and exploration.",
-            "description": "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
-            "ctaText": "Start Your Journey"
-        },
-        {
-            "id": "8",
-            "title": "Destination Title VIII",
-            "slug": "destination-title-viii",
-            "imgUrl": "/media/destination-02.png",
-            "imgAlt": "Relaxing beachfront at destination 8",
-            "shortDescription": "The perfect escape for sun and sea lovers.",
-            "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.",
-            "ctaText": "Get Inspired"
-        },
-        {
-            "id": "9",
-            "title": "Destination Title IX",
-            "slug": "destination-title-ix",
-            "imgUrl": "/media/destination-03.jpg",
-            "imgAlt": "Majestic mountains at destination 9",
-            "shortDescription": "A dream destination for nature lovers.",
-            "description": "Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.",
-            "ctaText": "Discover More"
-        }
-    ]
+  "destinations": [
+    {
+      "id": "a14bcdf2-f2aa-4b8f-87a5-e3b0dabc1f53",
+      "title": "Destination Title I",
+      "slug": "destination-title-i",
+      "imgUrl": "/media/destination-01.png",
+      "imgAlt": "Scenic view of destination",
+      "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+      "ctaText": "Explore Now"
+    },
+    {
+      "id": "4f1a9c3e-cfa4-4a0b-9f1f-60fc93515207",
+      "title": "Destination Title II",
+      "slug": "destination-title-ii",
+      "imgUrl": "/media/destination-02.png",
+      "imgAlt": "Beautiful landscape of destination 2",
+      "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+      "ctaText": "Visit Now"
+    },
+    {
+      "id": "0e2c9d8a-66a4-4de0-a40b-8ff13e9ec7ba",
+      "title": "Destination Title III",
+      "slug": "destination-title-iii",
+      "imgUrl": "/media/destination-03.jpg",
+      "imgAlt": "Magnificent view of destination 3",
+      "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+      "ctaText": "Book Now"
+    },
+    {
+      "id": "f47d94b2-6a41-43f9-9401-b479f93e4722",
+      "title": "Destination Title IV",
+      "slug": "destination-title-iv",
+      "imgUrl": "/media/destination-001.png",
+      "imgAlt": "Breathtaking scenery at destination 4",
+      "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+      "ctaText": "See More"
+    },
+    {
+      "id": "b0ee7c0f-6324-489e-bb45-930b1d9f2b10",
+      "title": "Destination Title V",
+      "slug": "destination-title-v",
+      "imgUrl": "/media/destination-002.png",
+      "imgAlt": "Serene environment of destination 5",
+      "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+      "ctaText": "Find Out More"
+    },
+    {
+      "id": "e13a3df3-6e8d-4e18-bf94-6a12f490348f",
+      "title": "Destination Title VI",
+      "slug": "destination-title-vi",
+      "imgUrl": "/media/destination-003.png",
+      "imgAlt": "Sunset view at destination 6",
+      "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat..",
+      "ctaText": "Plan Your Trip"
+    },
+    {
+      "id": "b4a9b3f8-2e8f-4b7c-8e7b-6e2f8e4a9b3f",
+      "title": "Destination Title VIII",
+      "slug": "destination-title-viii",
+      "imgUrl": "/media/destination-001.png",
+      "imgAlt": "Relaxing beachfront at destination 8",
+      "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+      "ctaText": "Get Inspired"
+    },
+    {
+      "id": "c4a9b3f8-2e8f-4b7c-8e7b-6e2f8e4a9b3f",
+      "title": "Destination Title IX",
+      "slug": "destination-title-ix",
+      "imgUrl": "/media/destination-002.png",
+      "imgAlt": "Majestic mountains at destination 9",
+      "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+      "ctaText": "Discover More"
+    },
+    {
+      "id": "d4a9b3f8-2e8f-4b7c-8e7b-6e2f8e4a9b3f",
+      "title": "destinationData",
+      "slug": "destinationdata",
+      "imgUrl": "/media/destination-004.png",
+      "imgAlt": "Scenic view of destination",
+      "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+      "ctaText": "destinationData"
+    }
+  ]
 }
