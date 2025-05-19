@@ -23,7 +23,7 @@ const DestinationsEdit = ({ updateDestination }) => {
 
         toast.success('Destiantion Updated Successfully');
 
-        return navigate(`/destinations/${destinationData.id}`);
+        return navigate(`/destinations/${destinationData.slug}`);
     };
 
     return (

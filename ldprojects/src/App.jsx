@@ -18,11 +18,23 @@ import BlogPage from "./pages/BlogPage";
 import ContactPage from "./pages/ContactPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
-const destinationsLoader = async ({ params }) => {
+const destinationLoader = async ({ params }) => {
     const res = await fetch(`/api/destinations/${params.id}`);
     const data = await res.json();
     return data;
 };
+
+const destinationLoaderBySlug = async ({ params }) => {
+  const res = await fetch('/api/destinations');
+  const data = await res.json();
+  const destination = data.find(d => d.slug === params.slug);
+
+  if (!destination) {
+    throw new Response("Not Found", { status: 404 });
+  }
+
+  return destination;
+}
 
 const addDestination = async (destinationData) => {
     // console.log(destinationData);
@@ -59,13 +71,13 @@ const editDestination = async (destinationData) => {
 
 const router = createBrowserRouter(
     createRoutesFromElements(
-        <Route path="/" element={<Layout />}>
+        <Route path="/" element={<Layout />} errorElement={<NotFoundPage />} >
             <Route index element={<HomePage />} />
             <Route path="projects-one" element={<ProjectsOne />} />
             <Route path="destinations" element={<Destinations />} />
-            <Route path="destinations/:id" element={<DestinationsSingle deleteDestination={deleteDestination} />} loader={destinationsLoader} />
+            <Route path="destinations/:slug" element={<DestinationsSingle deleteDestination={deleteDestination} />} loader={destinationLoaderBySlug} errorElement={<NotFoundPage />} />
             <Route path="destinations/new" element={<DestinationsNew newDestination={addDestination} />} />
-            <Route path="destinations/edit/:id" element={<DestinationsEdit updateDestination={editDestination} />} loader={destinationsLoader} />
+            <Route path="destinations/edit/:id" element={<DestinationsEdit updateDestination={editDestination} />} loader={destinationLoader} errorElement={<NotFoundPage />} />
             <Route path="about" element={<AboutPage />} />
             <Route path="blog" element={<BlogPage />} />
             <Route path="contact" element={<ContactPage />} />

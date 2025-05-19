@@ -7,7 +7,7 @@ import CtaInternalLink from "./CtaInternalLink";
 import "./DestinationCard.scss";
 
 const SliderCard = ({ destination }) => {
-    const { id, imgUrl, imgAlt = "Default Alt", title, description, ctaText = "Default CTA" } = destination;
+    const { title, slug, imgUrl, imgAlt = "Default Alt", description, ctaText = "Default CTA" } = destination;
 
     return (
         <div className="destination-card">
@@ -22,7 +22,7 @@ const SliderCard = ({ destination }) => {
                     ? `${description.slice(0, 120)}...`
                     : description}</p>
             </Content>
-            <CtaInternalLink link={`/destinations/${id}`}>{ctaText}</CtaInternalLink>
+            <CtaInternalLink link={`/destinations/${slug}`}>{ctaText}</CtaInternalLink>
         </div>
     );
 };
@@ -30,6 +30,7 @@ const SliderCard = ({ destination }) => {
 SliderCard.propTypes = {
     destination: PropTypes.shape({
         id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+        slug: PropTypes.string,
         imgUrl: PropTypes.string.isRequired,
         imgAlt: PropTypes.string,
         title: PropTypes.string.isRequired,

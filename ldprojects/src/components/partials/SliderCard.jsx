@@ -33,6 +33,7 @@ const SliderCard = ({ slide }) => {
 SliderCard.propTypes = {
     slide: PropTypes.shape({
         id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+        slug: PropTypes.string,
         imgUrl: PropTypes.string.isRequired,
         imgAlt: PropTypes.string,
         title: PropTypes.string.isRequired,

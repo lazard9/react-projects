@@ -100,6 +100,7 @@ DestinationForm.propTypes = {
     destinationSubmit: PropTypes.func.isRequired,
     initialDestinationData: PropTypes.shape({
         id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+        slug: PropTypes.string,
         imgUrl: PropTypes.string,
         imgAlt: PropTypes.string,
         title: PropTypes.string,
