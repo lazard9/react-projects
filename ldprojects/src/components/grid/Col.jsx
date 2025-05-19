@@ -4,7 +4,7 @@ import "./Col.scss";
 const Col = ({ xs, sm, md, lg, xl, margin, marginLg, children }) => {
     return (
         <div
-            className={`col col-xs-${xs} col-sm-${sm} col-md-${md} col-lg-${lg} col-xl-${xl} ${margin ? `mb-col-${margin}` : ""}  ${marginLg ? `mb-col-${marginLg}` : ""}`}
+            className={`col col-xs-${xs} col-sm-${sm} col-md-${md} col-lg-${lg} col-xl-${xl} ${margin ? `mb-col-${margin}` : ""}  ${marginLg ? `mb-col-lg-${marginLg}` : ""}`}
         >
             {children}
         </div>
@@ -17,8 +17,8 @@ Col.propTypes = {
     md: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     lg: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     xl: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-    margin: PropTypes.string,
-    marginLg: PropTypes.string,
+    margin: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    marginLg: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     children: PropTypes.node,
 };
 

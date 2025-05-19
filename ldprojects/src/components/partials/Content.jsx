@@ -16,7 +16,7 @@ const Content = ({ textAlignment, maxWidth, spacing, children }) => {
 Content.propTypes = {
     textAlignment: PropTypes.oneOf(['left', 'center', 'right']),
     maxWidth: PropTypes.string,
-    spacing: PropTypes.oneOf(['none', 'small', 'medium', 'large']),
+    spacing: PropTypes.oneOf(['default', 'minimal', 'none']),
     children: PropTypes.node.isRequired,
 };
 

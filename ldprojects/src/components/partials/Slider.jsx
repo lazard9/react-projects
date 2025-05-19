@@ -71,7 +71,7 @@ const Slider = () => {
                 {loading ? (
                     <SpinnerPuffLoader />
                 ) : (
-                    sliderCards.slice(0, 4).map((slide) => (
+                    sliderCards.slice(0, 3).map((slide) => (
                         <SwiperSlide key={slide.id}>
                             <SliderCard slide={slide} />
                         </SwiperSlide>
