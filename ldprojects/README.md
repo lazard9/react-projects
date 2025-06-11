@@ -126,7 +126,7 @@ These projects are inspired by tasks and solutions found on the Web Dev Simplifi
 
 ### Destinations Listing App
 
-Inspired by a [YouTube crash course on job listings](https://www.youtube.com/watch?v=VeNfHj6MhgA), this project takes the core idea and reshapes it into a tourist destination listing experience.
+Inspired by a [YouTube crash course on job listings](https://youtu.be/LDB4uaJ87e0?si=9yJWcM9itMkhTCDr), this project takes the core idea and reshapes it into a tourist destination listing experience.
 
 Key improvements and customizations:
 
