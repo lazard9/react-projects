@@ -8,12 +8,12 @@ Happy coding! 🚀
 
 ## Running React Projects
 
-Each React project is located inside the `ldprojects` folder. To run them, follow these steps:
+All React projects are currently located inside the `ldprojects` folder. To run them, follow these steps:
 
 1. Clone this repository:
 
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/lazard9/react-projects
     ```
 
 2. Navigate to the desired project folder:
