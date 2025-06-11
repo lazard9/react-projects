@@ -46,7 +46,7 @@ Navigate through the menu to explore different project pages, each featuring mor
     npm run server
     ```
 
-5. Run the development server [http://localhost:5173](http://localhost:5173):
+5. Run the development server [http://localhost:8080](http://localhost:8080):
 
     ```bash
     npm run dev
@@ -142,7 +142,7 @@ Key improvements and customizations:
 Unlike the original course project, this version splits the frontend and backend across two local servers:
 
 - The **JSON Server** runs on [http://localhost:8080](http://localhost:8080)
-- The **React app (Vite)** runs on [http://localhost:5173](http://localhost:5173)git co
+- The **React app (Vite)** runs on [http://localhost:5173](http://localhost:5173)
 
 This app focuses on reinforcing React fundamentals and creating maintainable, scalable component structures through hands-on experimentation.
 
