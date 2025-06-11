@@ -124,6 +124,28 @@ These projects are inspired by tasks and solutions found on the Web Dev Simplifi
     - Once correctly guessed, the game resets after a few seconds.
     - Initially implemented with `useEffect`, but later refactored to rely only on `useState` for better control.
 
+### Destinations Listing App
+
+Inspired by a [YouTube crash course on job listings](https://www.youtube.com/watch?v=VeNfHj6MhgA), this project takes the core idea and reshapes it into a tourist destination listing experience.
+
+Key improvements and customizations:
+
+- Replaces job posts with **tourist destinations**
+- Uses a **custom-built grid system and styling** (no CSS framework)
+- Implements **full CRUD functionality** (Create, Read, Update, Delete)
+- Uses **SEO-friendly slugs** in URLs instead of numeric IDs (UUID-based)
+- Adds an **error boundary** for better route-level error handling
+- Integrates **toast notifications** via `react-toastify`
+- Introduces a **reusable `CtaButton` component**, styled using BEM and Bootstrap-style variants
+- Loads destination data and images from a **local JSON source**
+
+Unlike the original course project, this version splits the frontend and backend across two local servers:
+
+- The **JSON Server** runs on [http://localhost:8080](http://localhost:8080)
+- The **React app (Vite)** runs on [http://localhost:5173](http://localhost:5173)
+
+This app focuses on reinforcing React fundamentals and creating maintainable, scalable component structures through hands-on experimentation.
+
 ---
 
 This project is a collection of learning exercises and experiments, helping refine skills in React, state management, and UI development.
