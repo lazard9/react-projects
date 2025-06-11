@@ -131,12 +131,12 @@ Inspired by a [YouTube crash course on job listings](https://www.youtube.com/wat
 Key improvements and customizations:
 
 - Replaces job posts with **tourist destinations**
-- Uses a **custom-built grid system and styling** (no CSS framework)
+- Uses a **custom-built grid system and styling** for this project (no CSS framework)
 - Implements **full CRUD functionality** (Create, Read, Update, Delete)
 - Uses **SEO-friendly slugs** in URLs instead of numeric IDs (UUID-based)
 - Adds an **error boundary** for better route-level error handling
 - Integrates **toast notifications** via `react-toastify`
-- Introduces a **reusable `CtaButton` component**, styled using BEM and Bootstrap-style variants
+- Introduces a **reusable components**, styled using BEM and Bootstrap-style variants
 - Loads destination data and images from a **local JSON source**
 
 Unlike the original course project, this version splits the frontend and backend across two local servers:
